@@ -1,0 +1,25 @@
+include ../mixins/head/menu
+include ../mixins/social/likes
+
+block menu
+	block first-menu
+		mixin top-menu(menu.first.items, 'first-menu')
+	div
+		form.simple-search(action='')
+			input.s-input(type="text", value="", placeholder="обзор гостевых", autocomplete="off")
+			input.s-but(type="submit", value="")	
+			div.search-results-block(style="display:none;")
+				div.all-results
+					a(href="") Все результаты
+						span.results-count
+							img(src="/i/preload.gif", alt="preload", style="display: none")
+							|	0
+		a.logo-link(href='/') Sports.ru
+
+	.social-icons-big.light-bg.likes
+		mixin like('fb', 'http://www.sports.ru/')
+		mixin like('tw', 'http://www.sports.ru/')
+		mixin like('vk', 'http://www.sports.ru/')
+
+	block second-menu
+		mixin top-menu(menu.second.items, 'second-menu')

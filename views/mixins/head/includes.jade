@@ -1,0 +1,5 @@
+mixin stylesheet(url, dontUseCdn)
+	link(href="#{dontUseCdn? '' : cdn.url}#{url}?#{ui.v}", rel="stylesheet", type="text/css")
+
+mixin javascript(url, dontUseCdn)
+	script(src="#{dontUseCdn? '' : cdn.url}#{url}?#{ui.v}", type="text/javascript")

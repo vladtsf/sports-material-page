@@ -1,6 +1,42 @@
-!!!
+include mixins/head/includes
+
+!!! strict
 html
-  head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-  body!= body
+	head
+		title= title
+		meta(http-equiv="Content-Type", content="text/html; charset=utf-8")
+		meta(http-equiv="Content-Language", content="ru")
+		meta(name="copyright", content="copyright ©2007, Sports.RU")
+		meta(name="Robots", content="index, follow")
+		meta(name="robots", content="all")
+		link(rel="Shortcut Icon", type="image/x-icon", href="/favicon.ico")
+
+		// stylesheets
+		block stylesheets
+			mixin stylesheet("/common/css/flags.css")
+			mixin stylesheet("/common/css/skin.css")
+			mixin stylesheet("/common/css/teaser.css")
+			mixin stylesheet("/common/css/stat.css")
+			mixin stylesheet("/common/css/popups.css")
+			mixin stylesheet("/css/promo.css", true)
+			//if lte IE 8
+				mixin stylesheet("/common/css/ie.css")
+
+		// scripts
+		block scripts
+			mixin javascript("http://code.jquery.com/jquery-1.7.1.min.js", true)
+			mixin javascript("/thirdparty.js")
+			mixin javascript("/templates.js")
+			mixin javascript("/common.min.js")
+			mixin javascript("/common/js/auth-sandbox.js")
+			script
+				if (typeof console !== 'object'){
+					console = {log: function(){}}
+				}
+	body
+		.pageLayout
+			include partials/header-layout
+
+
+
+

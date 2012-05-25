@@ -1,0 +1,10 @@
+block lang-box
+	.lang-box
+		span.lang.rus(class="#{locale.lang == 'ru' ? 'active' : ''}")
+			a(href="/")
+				i.flag-s.flag-1285
+				|	ru
+		span.lang.en(class="#{locale.lang == 'en' ? 'active' : ''}")
+			a(href="/en")
+				i.flag-s.flag-1413
+				|	en

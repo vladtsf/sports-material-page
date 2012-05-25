@@ -1,0 +1,15 @@
+extends layout
+
+block append stylesheets
+	mixin stylesheet("/common/css/tribuna.css")
+
+block append scripts
+	mixin javascript("/site.min.js")
+	script
+		jQuery(document).ready(function($) {
+			(function(Registry) {
+				$.Sports.Registry
+					.set('facebook-api-id', '109556845805232')
+			})(jQuery.Sports.Registry);
+		});
+

@@ -1,0 +1,149 @@
+{
+	"title":"Еще немного о трансферах АПЛ - Вы это видели? - Блог - Трибуна",
+	"cdn": {
+		"url":"http://s5o.ru"
+	},
+	"ui": {
+		"v":288
+	},
+	"locale": {
+		"lang":"ru"
+	},
+	"menu": {
+		"first": {
+			"items":[
+				{
+					"label": "Sports.ru",
+					"active": true,
+					"link": "/",
+					"child": [
+						{
+							"link": "/football/",
+							"label": "Футбол"
+						},
+						{
+							"link": "/hockey/",
+							"label": "Хоккей"
+						},
+						{
+							"link": "/basketball/",
+							"label": "Баскетбол"
+						},
+						{
+							"link": "/automoto/",
+							"label": "Авто/мото"
+						},
+						{
+							"link": "/boxing/",
+							"label": "Бокс/MMA"
+						},
+						{
+							"link": "/tennis/",
+							"label": "Теннис"
+						},
+						{
+							"link": "/others/",
+							"label": "Прочие"
+						}
+					]
+				},
+				{
+					"label": "Трибуна",
+					"link": "/tribuna/"
+				},
+				{
+					"label": "Fantasy",
+					"link": "/fantasy/"
+				},
+				{
+					"label": "Статистика",
+					"link": "/stat/"
+				},
+				{
+					"label": "Букмекер",
+					"link": "/betgame/"
+				},
+				{
+					"label": "Прогнозы",
+					"link": "/predictor/"
+				},
+				{
+					"label": "Трансляции",
+					"link": "/tv/"
+				},
+				{
+					"label": "Видео",
+					"link": "/video/"
+				}
+			]
+		},
+
+		"second": {
+			"items":[
+				{
+					"label": "Sports.ru",
+					"active": true,
+					"link": "/",
+					"child": [
+						{
+							"link": "/football/",
+							"label": "Футбол"
+						},
+						{
+							"link": "/hockey/",
+							"label": "Хоккей"
+						},
+						{
+							"link": "/basketball/",
+							"label": "Баскетбол"
+						},
+						{
+							"link": "/automoto/",
+							"label": "Авто/мото"
+						},
+						{
+							"link": "/boxing/",
+							"label": "Бокс/MMA"
+						},
+						{
+							"link": "/tennis/",
+							"label": "Теннис"
+						},
+						{
+							"link": "/others/",
+							"label": "Прочие"
+						}
+					]
+				},
+				{
+					"label": "Трибуна",
+					"link": "/tribuna/"
+				},
+				{
+					"label": "Fantasy",
+					"link": "/fantasy/"
+				},
+				{
+					"label": "Статистика",
+					"link": "/stat/"
+				},
+				{
+					"label": "Букмекер",
+					"link": "/betgame/"
+				},
+				{
+					"label": "Прогнозы",
+					"link": "/predictor/"
+				},
+				{
+					"label": "Трансляции",
+					"link": "/tv/"
+				},
+				{
+					"label": "Видео",
+					"link": "/video/"
+				}
+			]
+		}
+	}
+}
